@@ -8,8 +8,7 @@ The final aim is to create a plugin for the productive version of `ttw` applicat
 
 ## Approach
 
-In this version the focus lies on the extraction of location names.   
-
+In this version the focus lies on the extraction of location names. To be able to vary and to handle the test environments in a simple way the `Anaconda` plattform (see https://www.anaconda.com/) is used in combination with `Jupyter Notebooks` where the `Python` code is run.    
 - It is simulated that the plugin receives path, name of the text file and further settings from `ttw`.
 - The plugin gets the plain text from the selected text file and saves it in a folder ("NER_results"). 
 - It extracts a tokenized list of result entries that are beeing re-merged to a list of place names.
@@ -18,11 +17,15 @@ In this version the focus lies on the extraction of location names.
 
 ## Technical details
 
-- `dslim/bert-base-NER` is very suitable for this testing purposes concerning its performance and accuracy 
-- To be able to vary and to handle the test environments in a simple way the `Anaconda` plattform (see https://www.anaconda.com/) is used in combination with `Jupyter Notebooks` where the `Python` code is run.
-- Tested on `Anaconda Navigator 2.6.0` (`Windows`)
-- For all the specific requirements, dependencies, installed modules (`PyTorch`, `TensorFlow`) of the environment on which the `.ipynb` resp. the `Python` code was tested see the uploaded `environment.yml` file
-- For all other questions see especially https://huggingface.co/docs/transformers/installation
+- `dslim/bert-base-NER` is very suitable for this testing purposes concerning its performance and accuracy. 
+Here are the main environments parameters this version is tested with:
+- `Anaconda Navigator 2.6.0` (`Windows`)
+- `Python 3.7.0`
+- `PyTorch 1.4.0`
+- `TensorFlow 2.3.0`
+- `Transformers 4.11.3`
+- For all other questions see especially https://huggingface.co/docs/transformers/installation.
+- In case of problems check whether to use pip or conda-forge channel to install components. 
 
 ## Other Aspects
 
